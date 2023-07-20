@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93570D8E2A67F39700BFEB00 /* ToFigureOutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93570D8D2A67F39700BFEB00 /* ToFigureOutApp.swift */; };
+		93570D902A67F39700BFEB00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93570D8F2A67F39700BFEB00 /* ContentView.swift */; };
+		93570D922A67F39900BFEB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93570D912A67F39900BFEB00 /* Assets.xcassets */; };
+		93570D952A67F39900BFEB00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93570D942A67F39900BFEB00 /* Preview Assets.xcassets */; };
+		93570D9E2A68A7D100BFEB00 /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93570D9D2A68A7D100BFEB00 /* ReminderManager.swift */; };
+		93570DA02A68C68D00BFEB00 /* ConfigureReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93570D9F2A68C68D00BFEB00 /* ConfigureReminderView.swift */; };
+		93570DA22A68C7E100BFEB00 /* ReminderDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93570DA12A68C7E100BFEB00 /* ReminderDropView.swift */; };
+		93570DA52A68E65200BFEB00 /* ChatGPTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 93570DA42A68E65200BFEB00 /* ChatGPTSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		93570D8A2A67F39700BFEB00 /* ToFigureOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToFigureOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93570D8D2A67F39700BFEB00 /* ToFigureOutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToFigureOutApp.swift; sourceTree = "<group>"; };
+		93570D8F2A67F39700BFEB00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		93570D912A67F39900BFEB00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93570D942A67F39900BFEB00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		93570D962A67F39900BFEB00 /* ToFigureOut.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToFigureOut.entitlements; sourceTree = "<group>"; };
+		93570D9C2A68A65100BFEB00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		93570D9D2A68A7D100BFEB00 /* ReminderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
+		93570D9F2A68C68D00BFEB00 /* ConfigureReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureReminderView.swift; sourceTree = "<group>"; };
+		93570DA12A68C7E100BFEB00 /* ReminderDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDropView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93570D872A67F39600BFEB00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93570DA52A68E65200BFEB00 /* ChatGPTSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93570D812A67F39600BFEB00 = {
+			isa = PBXGroup;
+			children = (
+				93570D8C2A67F39700BFEB00 /* ToFigureOut */,
+				93570D8B2A67F39700BFEB00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93570D8B2A67F39700BFEB00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93570D8A2A67F39700BFEB00 /* ToFigureOut.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93570D8C2A67F39700BFEB00 /* ToFigureOut */ = {
+			isa = PBXGroup;
+			children = (
+				93570D9C2A68A65100BFEB00 /* Info.plist */,
+				93570D8D2A67F39700BFEB00 /* ToFigureOutApp.swift */,
+				93570D8F2A67F39700BFEB00 /* ContentView.swift */,
+				93570DA12A68C7E100BFEB00 /* ReminderDropView.swift */,
+				93570D9F2A68C68D00BFEB00 /* ConfigureReminderView.swift */,
+				93570D9D2A68A7D100BFEB00 /* ReminderManager.swift */,
+				93570D912A67F39900BFEB00 /* Assets.xcassets */,
+				93570D962A67F39900BFEB00 /* ToFigureOut.entitlements */,
+				93570D932A67F39900BFEB00 /* Preview Content */,
+			);
+			path = ToFigureOut;
+			sourceTree = "<group>";
+		};
+		93570D932A67F39900BFEB00 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				93570D942A67F39900BFEB00 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93570D892A67F39600BFEB00 /* ToFigureOut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93570D992A67F39900BFEB00 /* Build configuration list for PBXNativeTarget "ToFigureOut" */;
+			buildPhases = (
+				93570D862A67F39600BFEB00 /* Sources */,
+				93570D872A67F39600BFEB00 /* Frameworks */,
+				93570D882A67F39600BFEB00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToFigureOut;
+			packageProductDependencies = (
+				93570DA42A68E65200BFEB00 /* ChatGPTSwift */,
+			);
+			productName = ToFigureOut;
+			productReference = 93570D8A2A67F39700BFEB00 /* ToFigureOut.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93570D822A67F39600BFEB00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					93570D892A67F39600BFEB00 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 93570D852A67F39600BFEB00 /* Build configuration list for PBXProject "ToFigureOut" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93570D812A67F39600BFEB00;
+			packageReferences = (
+				93570DA32A68E65200BFEB00 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */,
+			);
+			productRefGroup = 93570D8B2A67F39700BFEB00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93570D892A67F39600BFEB00 /* ToFigureOut */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93570D882A67F39600BFEB00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93570D952A67F39900BFEB00 /* Preview Assets.xcassets in Resources */,
+				93570D922A67F39900BFEB00 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93570D862A67F39600BFEB00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93570D9E2A68A7D100BFEB00 /* ReminderManager.swift in Sources */,
+				93570DA22A68C7E100BFEB00 /* ReminderDropView.swift in Sources */,
+				93570DA02A68C68D00BFEB00 /* ConfigureReminderView.swift in Sources */,
+				93570D902A67F39700BFEB00 /* ContentView.swift in Sources */,
+				93570D8E2A67F39700BFEB00 /* ToFigureOutApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		93570D972A67F39900BFEB00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93570D982A67F39900BFEB00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		93570D9A2A67F39900BFEB00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToFigureOut/ToFigureOut.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ToFigureOut/Preview Content\"";
+				DEVELOPMENT_TEAM = Z88Z98GRZQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToFigureOut/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaithebuilder.ToFigureOut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		93570D9B2A67F39900BFEB00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToFigureOut/ToFigureOut.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ToFigureOut/Preview Content\"";
+				DEVELOPMENT_TEAM = Z88Z98GRZQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToFigureOut/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaithebuilder.ToFigureOut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93570D852A67F39600BFEB00 /* Build configuration list for PBXProject "ToFigureOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93570D972A67F39900BFEB00 /* Debug */,
+				93570D982A67F39900BFEB00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93570D992A67F39900BFEB00 /* Build configuration list for PBXNativeTarget "ToFigureOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93570D9A2A67F39900BFEB00 /* Debug */,
+				93570D9B2A67F39900BFEB00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93570DA32A68E65200BFEB00 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/ChatGPTSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93570DA42A68E65200BFEB00 /* ChatGPTSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93570DA32A68E65200BFEB00 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */;
+			productName = ChatGPTSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 93570D822A67F39600BFEB00 /* Project object */;
+}
