@@ -18,37 +18,57 @@ struct ConfigureReminderView: View {
     @State var results: [String] = []
     @State var isLoading: Bool = false
 
+    @State var showConfigureAPIKey: Bool = false
+
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         List {
+            Section("Source Reminder") {
+                HStack(alignment: .top) {
+                    Text("Title")
+                    Spacer()
+                    Text(reminder.title)
+                }
+                .listRowSeparator(.hidden)
+                if let notes = reminder.notes {
+                    HStack(alignment: .top) {
+                        Text("Notes")
+                        Spacer()
+                        Text(notes)
+                            .foregroundStyle(.gray)
+                            .font(.caption)
+                    }
+                }
+            }
+
+            Section("Configuration") {
+                Picker("Detail level", selection: $detailLevel) {
+                    ForEach(1..<6) { level in
+                        Text("\(level)")
+                            .tag(level)
+                    }
+                }
+                .pickerStyle(.segmented)
+            }
+
             Section {
                 HStack {
-                    Text("Reminder:")
                     Spacer()
-                    VStack {
-                        Text(reminder.title)
-                        if let notes = reminder.notes {
-                            Text(notes)
-                        }
+                    Button("Cancel", role: .cancel) { presentationMode.wrappedValue.dismiss() }
+                    if apiKey.isEmpty {
+                        Button("Add OpenAI Key") { showConfigureAPIKey = true }
+                            .buttonStyle(.borderedProminent)
+                    } else {
+                        Button("Change OpenAI Key") { showConfigureAPIKey = true }
+                            .buttonStyle(.bordered)
                     }
+                    Button("Figure Out") { figureOutResults() }
+                        .disabled(apiKey.isEmpty)
+                    Spacer()
                 }
-                HStack {
-                    Picker("Detail level", selection: $detailLevel) {
-                        ForEach(1..<6) { level in
-                            Text("\(level)")
-                                .tag(level)
-                        }
-                    }
-                    Text("/5")
-                }
-                TextField("API key:", text: $apiKey)
-                HStack {
-                    Spacer()
-                    Button("Cancel", role: .cancel) {}
-                    Button("Figure Out") {
-                        figureOutResults()
-                    }
-                    .disabled(apiKey.isEmpty)
-                    Spacer()
+                .sheet(isPresented: $showConfigureAPIKey) {
+                    TextField("API key:", text: $apiKey)
                 }
                 if isLoading {
                     ProgressView()
@@ -65,6 +85,7 @@ struct ConfigureReminderView: View {
                         Spacer()
                         Button("Add to Reminders") {
                             commitNewReminders()
+                            presentationMode.wrappedValue.dismiss()
                         }
                         Spacer()
                     }
