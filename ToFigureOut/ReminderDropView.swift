@@ -21,12 +21,13 @@ struct ReminderDropView: View {
     var body: some View {
         VStack {
             VStack {
-                Image(systemName: prototypeReminder == nil ? "square.dotted" : "square.dashed")
+                Image(systemName: "square.dashed")
                     .resizable()
                     .frame(width: 100, height: 100)
                 Text(prototypeReminder?.title ?? " ")
                     .padding(10)
             }
+            .foregroundStyle(prototypeReminder == nil ? .gray : .accentColor)
             .padding(20)
             Text("Drop your reminders here")
                 .font(.title)
